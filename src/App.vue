@@ -1,7 +1,7 @@
 <template>
-  <content-comp>
+  <lay-out>
     <router-view />
-  </content-comp>
+  </lay-out>
 </template>
 
 <style lang="scss">
@@ -9,13 +9,16 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
   color: #2c3e50;
 }
 </style>
 <script>
-import ContentComp from "./components/LayOut/ContentComp.vue";
+import LayOut from "./components/Global/LayOut.vue";
 export default {
-  components: { ContentComp },
+  name: "App",
+  components: {
+    LayOut,
+  },
 };
 </script>
