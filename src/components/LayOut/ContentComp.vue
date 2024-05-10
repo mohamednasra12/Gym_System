@@ -1,13 +1,17 @@
 <template>
   <div class="content">
-    <h4>this is content</h4>
+    <NavComp />
+    <slot></slot>
+    <FooterComp />
   </div>
-  >
 </template>
 
 <script>
+import NavComp from "./NavComp.vue";
+import FooterComp from "./FooterComp.vue";
 export default {
   name: "ContentComp",
+  components: { NavComp, FooterComp },
 };
 </script>
 
