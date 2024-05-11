@@ -1,10 +1,14 @@
 <template>
-  <h1>this is contact us</h1>
+  <ContactUsComp />
 </template>
 
 <script>
+import ContactUsComp from "@/components/ContactUsComp/ContactUsComp.vue";
 export default {
   name: "ContactUs",
+  components: {
+    ContactUsComp,
+  },
 };
 </script>
 

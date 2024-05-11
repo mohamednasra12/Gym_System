@@ -1,10 +1,14 @@
 <template>
-  <h1>this is OUR PRODUCTS us</h1>
+  <OurProductComp />
 </template>
 
 <script>
+import OurProductComp from "../components/OurProducts/OurProductComp.vue";
 export default {
   name: "OurProducts",
+  components: {
+    OurProductComp,
+  },
 };
 </script>
 

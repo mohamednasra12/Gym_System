@@ -1,10 +1,15 @@
 <template>
-  <h1>this is pricing</h1>
+  <PricingComp />
 </template>
 
 <script>
+import PricingComp from "@/components/PricingComp/PricingComp.vue";
+
 export default {
   name: "PricingPage",
+  components: {
+    PricingComp,
+  },
 };
 </script>
 
