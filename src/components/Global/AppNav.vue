@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="@/assets/imgas/logo2.png" alt="" />
       </a>
@@ -18,34 +18,12 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link active-class="active" class="nav-link" to="/"
-              >Home</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link active-class="active" class="nav-link" to="/about"
-              >AboutUs</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link active-class="active" class="nav-link" to="/about"
-              >OurClasses</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link active-class="active" class="nav-link" to="/about"
-              >OurProducts</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link active-class="active" class="nav-link" to="/about"
-              >Pricing</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link active-class="active" class="nav-link" to="/about"
-              >ContactUs</router-link
+          <li class="nav-item" v-for="(link, i) in links" :key="i">
+            <router-link
+              active-class="active"
+              class="nav-link"
+              :to="link.path"
+              >{{ link.meta.title }}</router-link
             >
           </li>
         </ul>
@@ -89,6 +67,11 @@ export default {
   components: {
     CardDrower,
   },
+  data() {
+    return {
+      links: this.$router.options.routes,
+    };
+  },
 };
 </script>
 
@@ -102,7 +85,7 @@ export default {
   background-color: black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.295);
   filter: blur(0.5px);
-  position: fixed;
+  position: sticky;
 
   width: 100%;
   top: 0;
@@ -128,12 +111,7 @@ export default {
     }
   }
 }
-div#navbarSupportedContent {
-  height: 57px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 button.card-icon {
   background-color: transparent;
   border: none;
