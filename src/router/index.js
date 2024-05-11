@@ -5,6 +5,7 @@ import OurClasses from "../views/OurClasses.vue";
 import OurProducts from "../views/OurProducts.vue";
 import PricingPage from "../views/PricingPage.vue";
 import ContactUs from "../views/ContactUs.vue";
+import ErrorPage from "../views/ErrorPage.vue";
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     meta: {
       title: "Contact Us",
     },
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "ErrorPage",
+    component: ErrorPage,
   },
 ];
 

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="@/assets/imgas/logo2.png" alt="" />
       </a>
@@ -18,12 +18,53 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item" v-for="(link, i) in links" :key="i">
+          <li class="nav-item">
             <router-link
               active-class="active"
               class="nav-link"
-              :to="link.path"
-              >{{ link.meta.title }}</router-link
+              :to="{ path: '/' }"
+            >
+              Home</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              active-class="active"
+              class="nav-link"
+              :to="{ path: '/about' }"
+              >AboutUs</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              active-class="active"
+              class="nav-link"
+              :to="{ path: '/ourclasses' }"
+              >OurClasses</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              active-class="active"
+              class="nav-link"
+              :to="{ path: '/ourproducts' }"
+              >OurProducts</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              active-class="active"
+              class="nav-link"
+              :to="{ path: '/pricing' }"
+              >Pricing</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              active-class="active"
+              class="nav-link"
+              :to="{ path: '/contactus' }"
+              >ContactUs</router-link
             >
           </li>
         </ul>
@@ -34,7 +75,7 @@
           data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight"
         >
-          <i class="fa-solid fa-store"></i>
+          <i class="fa-solid fa-bars-staggered"></i>
         </button>
       </div>
     </div>
@@ -67,11 +108,6 @@ export default {
   components: {
     CardDrower,
   },
-  data() {
-    return {
-      links: this.$router.options.routes,
-    };
-  },
 };
 </script>
 
@@ -82,24 +118,34 @@ export default {
   text-align: center;
 }
 .navbar {
-  background-color: black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.295);
-  filter: blur(0.5px);
+  background-color: rgba(20, 20, 20, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
   position: sticky;
+  z-index: 1000;
 
   width: 100%;
   top: 0;
 
-  .nav-link {
-    color: white;
+  a.nav-link {
+    color: rgba(255, 255, 255, 0.479);
     padding: 0rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0 0.5rem;
+    font-weight: 700;
+    font-family: "regular";
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
   }
+
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show {
-    border-bottom: 1px solid #eefb13;
+    border-bottom: 3px solid #eefb13;
     color: white;
+    font-family: "bold";
+    font-weight: 900;
   }
   a.navbar-brand {
     img {
@@ -124,5 +170,8 @@ button.card-icon {
 }
 .nav-side {
   margin-right: auto;
+}
+a.nav-link:hover {
+  letter-spacing: 1.3px;
 }
 </style>
