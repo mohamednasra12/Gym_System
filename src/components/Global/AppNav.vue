@@ -43,6 +43,7 @@
               >OurClasses</router-link
             >
           </li>
+
           <li class="nav-item">
             <router-link
               active-class="active"
@@ -132,12 +133,11 @@ export default {
   a.nav-link {
     color: rgba(255, 255, 255, 0.479);
     padding: 0rem;
-    font-size: 0.9rem;
-    margin: 0 0.5rem;
+    font-size: 0.8rem;
+    margin: 0 1.1rem;
     font-weight: 700;
     font-family: "regular";
     letter-spacing: 0.5px;
-    transition: all 0.3s ease-in-out;
   }
 
   .navbar-nav .nav-link.active,
@@ -170,8 +170,5 @@ button.card-icon {
 }
 .nav-side {
   margin-right: auto;
-}
-a.nav-link:hover {
-  letter-spacing: 1.3px;
 }
 </style>
