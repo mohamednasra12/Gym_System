@@ -23,3 +23,15 @@
   background-color: black;
   color: white;
 }
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1680px !important;
+}
+button.p-button.p-component {
+  background-color: #eefb13 !important;
+}
