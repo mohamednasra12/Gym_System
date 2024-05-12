@@ -1,5 +1,5 @@
 <template>
-  <h1>this is body</h1>
+  <h1>this is bodddy</h1>
 </template>
 
 <script>
