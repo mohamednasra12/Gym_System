@@ -64,8 +64,18 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
   routes,
+  history: createWebHistory(),
+  hashbang: false,
+  mode: "html5",
+  linkActiveClass: "active",
+  // linkExactActiveClass: "exact-active",
+  scrollBehavior() {
+    // Scroll to the top of the page
+    return window.scrollTo({ top: 0, behavior: "smooth" });
+  },
+  // history: createWebHistory(process.env.BASE_URL),
+  // routes,
 });
 
 export default router;
