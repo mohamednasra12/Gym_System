@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HomeComp from "../components/HomeComp/HomeComp.vue";
+import HomeComp from "@/components/HomeComp/HomeComp.vue";
 export default {
   name: "HomeView",
   components: {

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import HomeBody from "./HomeBody.vue";
+import HomeBody from "@/components/HomeComp/HomeBody.vue";
 import HomeAllAbout from "./HomeAllAbout.vue";
 import HomeClasses from "./HomeClasses.vue";
 import HomeSlider from "./HomeSlider.vue";
