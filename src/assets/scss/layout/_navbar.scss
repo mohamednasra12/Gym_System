@@ -41,8 +41,10 @@ ul.navbar-nav.me-auto {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     z-index: 1000;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.295);
     height: 200px;
+
+    transition: display 0.7s ease;
 
     ul {
       list-style: none;
@@ -54,13 +56,32 @@ ul.navbar-nav.me-auto {
       margin-top: 3rem;
       li {
         flex-grow: 1;
+        .miga-item {
+          display: flex;
+          align-items: baseline;
+          flex-direction: column;
+          transition: 0.5s;
+          h4 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.7rem;
+            color: #f7f9ff;
+            transition: 0.5s;
+          }
+        }
         a {
           display: block;
           padding: 8px 12px;
           color: white;
           text-decoration: none;
+          font-family: "regular";
+
           &:hover {
-            background-color: #f0f0f0;
+            color: #eefb13 !important;
+            p {
+              color: #eefb13 !important;
+            }
           }
         }
       }

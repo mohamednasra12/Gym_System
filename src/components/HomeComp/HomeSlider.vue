@@ -1,5 +1,7 @@
 <template>
-  <h1>this is slider</h1>
+  <div class="slider">
+    <img class="one" src="@/assets/imgas/slider.png" alt="" />
+  </div>
 </template>
 
 <script>

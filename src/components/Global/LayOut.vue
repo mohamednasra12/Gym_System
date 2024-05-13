@@ -2,9 +2,7 @@
   <div class="layout">
     <AppnNavVue />
     <div class="content">
-      <div class="container">
-        <slot></slot>
-      </div>
+      <slot></slot>
     </div>
     <AppFooterVue />
   </div>

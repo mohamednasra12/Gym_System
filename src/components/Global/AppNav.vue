@@ -34,36 +34,49 @@
             <div class="maga-menu">
               <ul class="links">
                 <li>
-                  <a> testimonials</a>
+                  <router-link to="/ourclasses"
+                    ><div class="miga-item">
+                      <img src="@/assets/imgas/right-chevron 2.svg" alt="" />
+                      <h4>Cardio workout</h4>
+                      <p>benifits of groub training</p>
+                    </div></router-link
+                  >
                 </li>
                 <li>
-                  <a>team</a>
+                  <router-link to="/ourclasses"
+                    ><div class="miga-item">
+                      <img src="@/assets/imgas/right-chevron 2.svg" alt="" />
+                      <h4>group training</h4>
+                      <p>benifits of groub training</p>
+                    </div></router-link
+                  >
                 </li>
                 <li>
-                  <a>our-skill</a>
+                  <router-link to="/ourclasses"
+                    ><div class="miga-item">
+                      <img src="@/assets/imgas/right-chevron 2.svg" alt="" />
+                      <h4>personal training</h4>
+                      <p>benifits of groub training</p>
+                    </div></router-link
+                  >
                 </li>
                 <li>
-                  <a>>work-steps</a>
+                  <router-link to="/ourclasses">
+                    <div class="miga-item">
+                      <img src="@/assets/imgas/right-chevron 2.svg" alt="" />
+                      <h4>digital coaching</h4>
+                      <p>benifits of groub training</p>
+                    </div></router-link
+                  >
                 </li>
                 <li>
-                  <a>services</a>
-                </li>
-              </ul>
-              <ul class="links">
-                <li>
-                  <a>events</a>
-                </li>
-                <li>
-                  <a>pricing</a>
-                </li>
-                <li>
-                  <a>top-video</a>
-                </li>
-                <li>
-                  <a>stats</a>
-                </li>
-                <li>
-                  <a>discount</a>
+                  <router-link to="/ourclasses"
+                    ><div class="miga-item">
+                      <img src="@/assets/imgas/right-chevron 2.svg" alt="" />
+                      <h4>personal training</h4>
+                      <p>benifits of groub training</p>
+                    </div></router-link
+                  >
                 </li>
               </ul>
             </div>
