@@ -27,43 +27,43 @@
               about us
             </router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ourclasses">
             <router-link to="/ourclasses" class="nav-link" aria-current="page">
               Our classes
             </router-link>
             <div class="maga-menu">
               <ul class="links">
                 <li>
-                  <a><i class="far fa-comments fa-fw"></i>testimonials</a>
+                  <a> testimonials</a>
                 </li>
                 <li>
-                  <a><i class="far fa-user fa-fw"></i>team</a>
+                  <a>team</a>
                 </li>
                 <li>
-                  <a><i class="far fa-check-circle fa-fw"></i>our-skill</a>
+                  <a>our-skill</a>
                 </li>
                 <li>
-                  <a><i class="far fa-clipboard fa-fw"></i>work-steps</a>
+                  <a>>work-steps</a>
                 </li>
                 <li>
-                  <a><i class="far fa-building fa-fw"></i>services</a>
+                  <a>services</a>
                 </li>
               </ul>
               <ul class="links">
                 <li>
-                  <a><i class="far fa-calendar-alt fa-fw"></i>events</a>
+                  <a>events</a>
                 </li>
                 <li>
-                  <a><i class="fas fa-server fa-fw"></i>pricing</a>
+                  <a>pricing</a>
                 </li>
                 <li>
-                  <a><i class="far fa-play-circle fa-fw"></i>top-video</a>
+                  <a>top-video</a>
                 </li>
                 <li>
-                  <a><i class="far fa-chart-bar fa-fw"></i>stats</a>
+                  <a>stats</a>
                 </li>
                 <li>
-                  <a><i class="fas fa-percent fa-fw"></i>discount</a>
+                  <a>discount</a>
                 </li>
               </ul>
             </div>
@@ -84,17 +84,17 @@
             </router-link>
           </li>
         </ul>
-      </div>
-      <div class="drowar">
-        <button
-          class="btn"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="drowar">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
