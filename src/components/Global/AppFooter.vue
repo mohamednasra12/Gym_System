@@ -15,7 +15,7 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-3 col-lg-3 col-xl-4 mb-4">
             <!-- Content -->
             <img src="@/assets/imgas/logo2.png" alt="" />
             <h4 class="aderss">
@@ -38,9 +38,11 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+          <div class="col-md-3 col-lg-3 col-xl-2 mt-4">
             <!-- Links -->
-            <h6 class="text-uppercase hed mb-4">About us</h6>
+            <h6 class="text-uppercase hed mb-4">
+              <span style="border-bottom: 1px solid #eefb13">About</span> us
+            </h6>
             <p class="links-gym">
               <router-link href="#!" class="text-reset">Home</router-link>
             </p>
@@ -59,9 +61,11 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-4">
+          <div class="col-md-3 col-lg-3 col-xl-2 mt-4">
             <!-- Links -->
-            <h6 class="text-uppercase mb-4 hed">Quick Links</h6>
+            <h6 class="text-uppercase mb-4 hed">
+              <span style="border-bottom: 1px solid #eefb13">Quick </span>Links
+            </h6>
             <p class="links-gym">
               <router-link href="#!" class="text-reset"
                 >Common questions</router-link
@@ -82,9 +86,12 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mt-4">
+          <div class="col-md-4 col-lg-3 col-xl-4 mb-md-0 mt-4">
             <!-- Links -->
-            <h6 class="text-uppercase hed mb-4">Opening Hours</h6>
+            <h6 class="text-uppercase hed mb-4">
+              <span style="border-bottom: 1px solid #eefb13">Opening</span>
+              Hours
+            </h6>
             <p class="weekday">Saturday <span>08:00 am - 06:00 pm</span></p>
             <p class="weekday">Sunday <span>08:00 am - 06:00 pm</span></p>
             <p class="weekday">Monday <span>08:00 am - 06:00 pm</span></p>
