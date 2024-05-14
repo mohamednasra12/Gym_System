@@ -2,15 +2,7 @@
   <!-- Footer -->
   <footer class="text-center text-lg-start">
     <!-- Section: Social media -->
-    <section
-      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-    >
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-
+    <section class="d-flex justify-content-center justify-content-lg-between">
       <!-- Right -->
 
       <!-- Right -->
@@ -23,67 +15,90 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-3 col-lg-3 col-xl-4 mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+            <img src="@/assets/imgas/logo2.png" alt="" />
+            <h4 class="aderss">
+              The longest running gym in Chicago. Owned and operated by a
+              personal trainer with over 25 years experience.
+            </h4>
+            <div class="information">
+              <img src="@/assets/imgas/location.svg" alt="" />
+              <p class="follow">2702 Memory Lane<br />Chicago, IL 60605</p>
+            </div>
+            <div class="information">
+              <img src="@/assets/imgas/phon.svg" alt="" />
+              <p class="phons">01226541874<br />01115446488</p>
+            </div>
+            <div class="information">
+              <img src="@/assets/imgas/sms.svg" alt="" />
+              <p class="email">gym-fitness22@gmail.com</p>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-2 mt-4">
+            <!-- Links -->
+            <h6 class="text-uppercase hed mb-4">
+              <span style="border-bottom: 1px solid #eefb13">About</span> us
             </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset">Home</router-link>
+            </p>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset">About us</router-link>
+            </p>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset">Pricing</router-link>
+            </p>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset"
+                >Our products</router-link
+              >
             </p>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-3 col-lg-3 col-xl-2 mt-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
+            <h6 class="text-uppercase mb-4 hed">
+              <span style="border-bottom: 1px solid #eefb13">Quick </span>Links
+            </h6>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset"
+                >Common questions</router-link
+              >
             </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset"
+                >Instructions for use</router-link
+              >
             </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset">Blogs</router-link>
             </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
+            <p class="links-gym">
+              <router-link href="#!" class="text-reset">Contact us</router-link>
             </p>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-4 col-lg-3 col-xl-4 mb-md-0 mt-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-            <p>
-              <a href="#!" class="text-reset">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Settings</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <h6 class="text-uppercase hed mb-4">
+              <span style="border-bottom: 1px solid #eefb13">Opening</span>
+              Hours
+            </h6>
+            <p class="weekday">Saturday <span>08:00 am - 06:00 pm</span></p>
+            <p class="weekday">Sunday <span>08:00 am - 06:00 pm</span></p>
+            <p class="weekday">Monday <span>08:00 am - 06:00 pm</span></p>
+            <p class="weekday">Tuesday <span>08:00 am - 06:00 pm</span></p>
+            <p class="weekday">Wednesday <span>08:00 am - 06:00 pm</span></p>
+            <p class="weekday">Thursday <span>08:00 am - 06:00 pm</span></p>
+            <p class="weekday">Friday <span>08:00 am - 06:00 pm</span></p>
           </div>
           <!-- Grid column -->
         </div>
@@ -93,11 +108,29 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-        >MDBootstrap.com</a
-      >
+    <div class="end-footer">
+      <h4>Made by <span>X</span> Coders coding with expert</h4>
+      <div class="icons">
+        <router-link href="" class="text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </router-link>
+        <router-link href="" class="text-reset">
+          <i class="fab fa-twitter"></i>
+        </router-link>
+        <router-link href="" class="text-reset">
+          <i class="fab fa-google"></i>
+        </router-link>
+        <router-link href="" class="text-reset">
+          <i class="fab fa-instagram"></i>
+        </router-link>
+        <router-link href="" class="text-reset">
+          <i class="fab fa-linkedin"></i>
+        </router-link>
+        <router-link href="" class="text-reset">
+          <i class="fab fa-github"></i>
+        </router-link>
+      </div>
+      <h4>© All rights reserved @ gym platform 2024</h4>
     </div>
 
     <!-- Copyright -->
