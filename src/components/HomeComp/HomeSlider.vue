@@ -23,7 +23,17 @@
         <img src="@/assets/imgas/slider2.png" alt="" />
       </swiper-slide>
     </swiper>
-    <div class="overlay"></div>
+    <div class="overlay">
+      <div class="text">
+        <h4>stop wishing start doing</h4>
+        <p>
+          At the club, hotel, home and more. Start now and do not hesitate.. You
+          still have more time.. Get to know our gym and choose the services
+          required of you.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
   </div>
 </template>
 
