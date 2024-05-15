@@ -1,5 +1,5 @@
 <template>
-  <h1>this is classes designe</h1>
+  <h1 data-aos="fade-up">this is classes designe</h1>
 </template>
 
 <script>
