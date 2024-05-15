@@ -2,16 +2,12 @@
   <!-- Footer -->
   <footer class="text-center text-lg-start">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between">
-      <!-- Right -->
 
-      <!-- Right -->
-    </section>
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
+    <section class="container-fluid">
+      <div class="text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -131,28 +127,6 @@
         </router-link>
       </div>
       <h4>© All rights reserved @ gym platform 2024</h4>
-    </div>
-
-    <!-- Copyright -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
     </div>
   </footer>
   <!-- Footer -->
