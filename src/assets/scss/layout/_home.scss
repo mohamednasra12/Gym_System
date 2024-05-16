@@ -1,5 +1,5 @@
 .home_slider {
-  height: 90vh;
+  height: 550px;
   position: relative;
   .swiper {
     width: 100%;
@@ -75,6 +75,12 @@
         background-color: #eefb13;
         color: black;
         padding: 1.5rem 4.5rem;
+        transition: 0.5s;
+        font-family: "regular";
+        &:hover{
+          background-color: black;
+          color: #eefb13;
+        }
       }
     }
   }
