@@ -7,7 +7,7 @@
       :spaceBetween="30"
       :mousewheel="true"
       :autoplay="{
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
       }"
       :modules="modules"
@@ -23,6 +23,7 @@
         <img src="@/assets/imgas/slider2.png" alt="" />
       </swiper-slide>
     </swiper>
+    <div class="overlay"></div>
   </div>
 </template>
 
