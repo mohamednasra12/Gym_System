@@ -10,10 +10,6 @@
   </div>
   <div class="home_classes">
     <swiper
-      :style="{
-        '--swiper-navigation-color': 'red',
-        '--swiper-pagination-color': 'red',
-      }"
       :slidesPerView="1"
       :spaceBetween="10"
       :autoplay="{
