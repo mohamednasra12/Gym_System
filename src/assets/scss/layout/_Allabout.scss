@@ -1,0 +1,81 @@
+.all_about {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 1rem;
+  div#v-pills-tab {
+    margin-top: 2rem;
+    background-image: url("@/assets/imgas/batab.png");
+    width: 50%;
+    color: black;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+
+    p {
+      padding: 0;
+      text-align: start;
+      font-size: 0.9rem;
+      font-family: "regular";
+      margin-top: 0.5rem;
+    }
+    button {
+      font-size: 1.2rem;
+      font-family: "bold";
+      transition: 0.7s;
+      margin-top: 1rem;
+      &:hover {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+        color: rgba(0, 0, 0, 0.185);
+      }
+    }
+    .read {
+      background-color: #eefb13;
+      color: black;
+      padding: 0.8rem 2.5rem;
+      transition: 0.5s;
+      font-family: "regular";
+      border: 0;
+      border-radius: 10px;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      &:hover {
+        background-color: black;
+        color: #eefb13;
+        border: unset !important;
+      }
+    }
+  }
+  .tab-content {
+    width: 50%;
+    margin-top: 2rem;
+    background-image: url("@/assets/imgas/gymtab.png");
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #eefb13;
+    background-position: center;
+    .text-tab {
+      margin-top: -20px;
+      margin-right: 30px;
+      p {
+        color: black;
+        font-size: 2rem;
+        font-family: "bold";
+        text-align: center;
+        margin: 2rem auto;
+      }
+      h4 {
+        margin: -47px auto;
+        font-size: 3rem;
+        font-family: "bold";
+        color: black;
+      }
+    }
+  }
+}
