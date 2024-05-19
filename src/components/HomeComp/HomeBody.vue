@@ -2,9 +2,9 @@
   <div class="HomeBody">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="text">
-            <h4>Body Mass index</h4>
+            <h4>Body Mass Index</h4>
             <p>
               Body Mass Index (BMI) is a measure of body fat based on height and
               weight that applies to adult men and women.
@@ -27,48 +27,51 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-8">
           <div class="input">
-            <div class="row">
-              <div class="col-lg-6">
-                <p>Your Height (cm)</p>
-                <div class="range">
+            <div class="all-range">
+              <div class="range">
+                <div class="range-lable">
+                  <label>Your Height (cm)</label>
                   <input
                     type="range"
-                    min="0"
-                    max="2.5"
-                    step="any"
+                    min="50"
+                    max="250"
+                    step="1"
                     v-model="inputValueHight"
                     @input="updateValueHight"
                   />
-                  <p class="value">
-                    <output>{{ displayedValueHight }}</output>
-                  </p>
                 </div>
-                <p>Your Weight (kg)</p>
-                <div class="range">
+                <p class="value">
+                  <output>{{ displayedValueHight }}</output>
+                </p>
+              </div>
+              <div class="range">
+                <div class="range-lable">
+                  <label>Your Weight (kg)</label>
                   <input
                     type="range"
-                    min="0"
-                    max="2.5"
-                    step="any"
+                    min="10"
+                    max="200"
+                    step="1"
                     v-model="inputValue"
                     @input="updateValue"
                   />
-                  <p class="value">
-                    <output>{{ displayedValue }}</output>
-                  </p>
                 </div>
+                <p class="value">
+                  <output>{{ displayedValue }}</output>
+                </p>
               </div>
-              <div class="col-lg-6">
-                <div class="text-hight">
-                  <h4>kg72.2</h4>
-                  <p class="max">Your Maximum Proper Weight</p>
-                </div>
-                <div class="text-weight">
-                  <h4>kg72.2</h4>
-                  <p class="max">Your Maximum Proper Weight</p>
-                </div>
+            </div>
+
+            <div class="all-range">
+              <div class="text-hight">
+                <h4>Kg{{ displayedValueHight }}</h4>
+                <p class="max">Your Maximum Proper Weight</p>
+              </div>
+              <div class="text-weight">
+                <h4>{{ displayedValue }}</h4>
+                <p class="max">Your Maximum Proper Weight</p>
               </div>
             </div>
           </div>
@@ -82,20 +85,18 @@
 export default {
   data() {
     return {
-      inputValueHight: 0, // 170 cm converted to meters
-      displayedValueHight: "",
-      inputValue: 0, // 170 cm converted to meters
-      displayedValue: "",
+      inputValueHight: 170, // Default height in cm
+      displayedValueHight: "170",
+      inputValue: 70, // Default weight in kg
+      displayedValue: "70",
     };
   },
   methods: {
     updateValueHight(event) {
-      // Convert input value from meters to centimeters
-      this.displayedValueHight = (event.target.value * 100).toFixed(2); // Convert to fixed decimal places
+      this.displayedValueHight = event.target.value;
     },
     updateValue(event) {
-      // Convert input value from meters to centimeters
-      this.displayedValue = (event.target.value * 100).toFixed(2); // Convert to fixed decimal places
+      this.displayedValue = event.target.value;
     },
   },
 };
