@@ -1,0 +1,48 @@
+.HomeBody {
+    margin-top: 5rem;
+  .range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    .value {
+      margin-bottom: 0;
+      
+    }
+  }
+  .text {
+    text-align: start;
+    p{
+        width: 50%;
+    }
+  }
+  .nots {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1rem;
+    img {
+        width: 5%;
+    }
+   p {
+      margin-bottom: 0;
+      font-family: "regular";
+     
+    }
+  }
+  output {
+    border: 1px solid;
+    padding: 0.5rem;
+}
+.input {
+    p{
+        text-align: start;
+    }
+    .max {
+        text-align: center;
+    }
+}
+.text-hight {
+    margin-bottom: 3rem;
+}
+}
