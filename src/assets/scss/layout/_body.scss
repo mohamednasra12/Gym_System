@@ -1,19 +1,18 @@
 .HomeBody {
-    margin-top: 5rem;
-  .range {
+  margin-top: 5rem;
+  .range-lable {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
-    .value {
-      margin-bottom: 0;
-      
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+    label {
+      text-align: start;
     }
   }
   .text {
     text-align: start;
-    p{
-        width: 50%;
+    p {
+      width: 80%;
     }
   }
   .nots {
@@ -22,27 +21,89 @@
     align-items: center;
     margin-bottom: 1rem;
     img {
-        width: 5%;
+      width: 5%;
     }
-   p {
+    p {
       margin-bottom: 0;
       font-family: "regular";
-     
     }
   }
   output {
     border: 1px solid;
-    padding: 0.5rem;
-}
-.input {
-    p{
-        text-align: start;
+    padding: 0.8rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+  }
+  .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 12px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: white;
     }
-    .max {
-        text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background-color: white;
     }
-}
-.text-hight {
-    margin-bottom: 3rem;
-}
+
+    .all-range {
+      width: 50%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      gap: 50%;
+
+      .range {
+        display: flex;
+        gap: 60px;
+      }
+    }
+    .text-hight {
+      p {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+      }
+      h4 {
+        color: #eefb13;
+        font-family: "regular";
+      }
+    }
+    .text-weight {
+      p {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+      }
+      h4 {
+        color: #eefb13;
+        font-family: "regular";
+      }
+    }
+  }
+  input[type="range"] {
+    accent-color: #eefb13;
+  }
 }
