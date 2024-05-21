@@ -2,11 +2,13 @@
   margin-top: 5rem;
   .range-lable {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 60%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 76%;
     label {
       text-align: start;
+      margin-bottom: 3rem;
     }
   }
   .text {
@@ -28,16 +30,7 @@
       font-family: "regular";
     }
   }
-  output {
-    border: 1px solid;
-    padding: 0.8rem;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 14px;
-  }
+
   .input {
     display: flex;
     justify-content: space-between;
@@ -77,12 +70,9 @@
       justify-content: center;
       gap: 50%;
 
-      .range {
-        display: flex;
-        gap: 60px;
-      }
+    
     }
-    .text-hight {
+    .text-height {
       p {
         margin-bottom: 0;
         font-size: 0.8rem;
@@ -105,5 +95,25 @@
   }
   input[type="range"] {
     accent-color: #eefb13;
+  }
+  .output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 55px;
+    border: 1px solid;
+
+    border-radius: 12px;
+    input {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      color: white;
+      font-size: 1.2rem;
+      font-family: "regular";
+      text-align: center;
+    }
   }
 }

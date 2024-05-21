@@ -32,45 +32,57 @@
             <div class="all-range">
               <div class="range">
                 <div class="range-lable">
-                  <label>Your Height (cm)</label>
-                  <input
-                    type="range"
-                    min="50"
-                    max="250"
-                    step="1"
-                    v-model="inputValueHight"
-                    @input="updateValueHight"
-                  />
+                  <div class="ranges">
+                    <label>Your Height (cm)</label>
+                    <input
+                      type="range"
+                      min="50"
+                      max="250"
+                      step="1"
+                      v-model="inputValueHeight"
+                      @input="updateValueHeight"
+                    />
+                  </div>
+                  <div class="output">
+                    <input
+                      type="number"
+                      v-model="inputValueHeight"
+                      @input="updateValueHeight"
+                    />
+                  </div>
                 </div>
-                <p class="value">
-                  <output>{{ displayedValueHight }}</output>
-                </p>
               </div>
               <div class="range">
                 <div class="range-lable">
-                  <label>Your Weight (kg)</label>
-                  <input
-                    type="range"
-                    min="10"
-                    max="200"
-                    step="1"
-                    v-model="inputValue"
-                    @input="updateValue"
-                  />
+                  <div class="ranges">
+                    <label>Your Weight (kg)</label>
+                    <input
+                      type="range"
+                      min="10"
+                      max="200"
+                      step="1"
+                      v-model="inputValueWeight"
+                      @input="updateValueWeight"
+                    />
+                  </div>
+                  <div class="output">
+                    <input
+                      type="number"
+                      v-model="inputValueWeight"
+                      @input="updateValueWeight"
+                    />
+                  </div>
                 </div>
-                <p class="value">
-                  <output>{{ displayedValue }}</output>
-                </p>
               </div>
             </div>
 
             <div class="all-range">
-              <div class="text-hight">
-                <h4>Kg{{ displayedValueHight }}</h4>
+              <div class="text-height">
+                <h4>{{ displayedValueHeight }} cm</h4>
                 <p class="max">Your Maximum Proper Weight</p>
               </div>
               <div class="text-weight">
-                <h4>{{ displayedValue }}</h4>
+                <h4>{{ displayedValueWeight }} kg</h4>
                 <p class="max">Your Maximum Proper Weight</p>
               </div>
             </div>
@@ -85,19 +97,33 @@
 export default {
   data() {
     return {
-      inputValueHight: 170, // Default height in cm
-      displayedValueHight: "170",
-      inputValue: 70, // Default weight in kg
-      displayedValue: "70",
+      inputValueHeight: 170, // Default height in cm
+      displayedValueHeight: "170",
+      inputValueWeight: 70, // Default weight in kg
+      displayedValueWeight: "70",
     };
   },
   methods: {
-    updateValueHight(event) {
-      this.displayedValueHight = event.target.value;
+    updateValueHeight() {
+      this.displayedValueHeight = this.inputValueHeight;
     },
-    updateValue(event) {
-      this.displayedValue = event.target.value;
+    updateValueWeight() {
+      this.displayedValueWeight = this.inputValueWeight;
     },
+    calculateBMI() {
+      const heightInMeters = this.inputValueHeight / 100;
+      const BMI = this.inputValueWeight / (heightInMeters * heightInMeters);
+      return BMI.toFixed(2); // Round to 2 decimal places
+    },
+  },
+  computed: {
+    BMI() {
+      return this.calculateBMI();
+    },
+  },
+  mounted() {
+    this.displayedValueHeight = this.inputValueHeight;
+    this.displayedValueWeight = this.inputValueWeight;
   },
 };
 </script>
