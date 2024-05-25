@@ -12,10 +12,10 @@
     <swiper
       :slidesPerView="1"
       :spaceBetween="10"
-      :autoplay="{
-        delay: 5000,
+      :navigation="{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       }"
-      :navigation="true"
       :breakpoints="{
         '@0.00': {
           slidesPerView: 1,
@@ -54,12 +54,16 @@
         </router-link>
       </swiper-slide>
     </swiper>
+    <div class="arrows">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
   </div>
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 export default {
@@ -101,10 +105,30 @@ export default {
   },
   setup() {
     return {
-      modules: [Autoplay, Navigation],
+      modules: [Navigation],
     };
   },
 };
 </script>
+<style scoped>
+.home_classes {
+  position: relative;
+}
 
-<style></style>
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 100%; /* Move the buttons below the swiper */
+  transform: translateY(50%); /* Center the buttons vertically */
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.swiper-button-next {
+  left: 50%; /* Adjust the position as needed */
+}
+
+.swiper-button-prev {
+  left: 47%; /* Adjust the position as needed */
+}
+</style>

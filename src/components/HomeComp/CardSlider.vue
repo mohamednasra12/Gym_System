@@ -1,5 +1,5 @@
 <template>
-  <div class="card-slider" v-for="(img, i) in swiper" :key="i">
+  <div class="card-slider" v-for="(img, i) in swipers" :key="i">
     <img :src="img.src" alt="" />
     <div class="text">
       <div class="nots">
