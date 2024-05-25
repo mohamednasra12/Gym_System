@@ -36,8 +36,8 @@
                     <label>Your Height (cm)</label>
                     <input
                       type="range"
-                      min="50"
-                      max="250"
+                      min="10"
+                      max="200"
                       step="1"
                       v-model="inputValueHeight"
                       @input="updateValueHeight"
@@ -58,8 +58,8 @@
                     <label>Your Weight (kg)</label>
                     <input
                       type="range"
-                      min="10"
-                      max="200"
+                      min="50"
+                      max="250"
                       step="1"
                       v-model="inputValueWeight"
                       @input="updateValueWeight"
@@ -77,13 +77,13 @@
             </div>
 
             <div class="all-range">
-              <div class="text-height">
-                <h4>{{ displayedValueHeight }} cm</h4>
+              <div class="text-weight">
+                <h4>kg {{ displayedValueWeight }}</h4>
                 <p class="max">Your Maximum Proper Weight</p>
               </div>
-              <div class="text-weight">
-                <h4>{{ displayedValueWeight }} kg</h4>
-                <p class="max">Your Maximum Proper Weight</p>
+              <div class="text-height">
+                <h4>{{ BMI }}</h4>
+                <p class="max">Body Mass Index (BMI)</p>
               </div>
             </div>
           </div>
@@ -97,9 +97,9 @@
 export default {
   data() {
     return {
-      inputValueHeight: 170, // Default height in cm
+      inputValueHeight: 170,
       displayedValueHeight: "170",
-      inputValueWeight: 70, // Default weight in kg
+      inputValueWeight: 70,
       displayedValueWeight: "70",
     };
   },
@@ -113,7 +113,7 @@ export default {
     calculateBMI() {
       const heightInMeters = this.inputValueHeight / 100;
       const BMI = this.inputValueWeight / (heightInMeters * heightInMeters);
-      return BMI.toFixed(2); // Round to 2 decimal places
+      return BMI.toFixed(2);
     },
   },
   computed: {
